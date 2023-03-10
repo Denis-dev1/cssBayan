@@ -1,0 +1,28 @@
+.container {
+  margin: 5rem;
+}
+
+body {
+  font-family: lora;
+}
+.accordion {
+  margin-bottom: 5px;
+}
+.accordion-header {
+  background-color: gray;
+  padding: 15px 10px;
+  color: white;
+  cursor: pointer;
+}
+.accordion-content-wrapper {
+  padding: 5px;
+}
+
+.accordion-content {
+  padding: 1rem;
+  margin: auto;
+}
+
+.accordion-content-img {
+  margin-left: 40%;
+}
