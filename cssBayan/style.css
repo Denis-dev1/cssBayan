@@ -1,18 +1,25 @@
 .container {
-  margin: 5rem;
+  margin: 1rem 10rem;
 }
 
 body {
-  font-family: lora;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.page-heading {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .accordion {
-  margin-bottom: 5px;
+  margin-bottom: 0.2rem;
 }
 .accordion-header {
   background-color: gray;
   padding: 15px 10px;
   color: white;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 .accordion-content-wrapper {
   padding: 5px;
@@ -25,4 +32,52 @@ body {
 
 .accordion-content-img {
   margin-left: 40%;
+}
+
+/* try this one */
+/* ✖️➕ ▶️  🔽 */
+
+details > summary {
+  list-style-type: none;
+  transition: all 0.5s;
+}
+
+details[open] > summary {
+  list-style-type: none;
+  transition: all 0.5s;
+}
+
+details[open] > summary > img {
+  scale: 0.8;
+  transition: all 0.5s;
+}
+
+details {
+  border: 2px solid gray;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+}
+
+details[open] > summary {
+  margin-bottom: 1rem;
+}
+
+summary::after {
+  margin-left: 1ch;
+  display: inline-block;
+  transition: 0.2s;
+
+  content: "\26CC"; /* Very Bold Greek Cross */
+  transform: rotate(45deg);
+}
+
+details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+.accordion-header-content1 {
+  margin-right: 75rem;
+}
+.accordion-header-content2 {
+  margin-right: 78.5rem;
 }

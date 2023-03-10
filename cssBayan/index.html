@@ -13,10 +13,12 @@ feat: add basic page layout (Mon, Sep 13, 2021 10:25:24 PM) -->
   </head>
   <body>
     <div class="container">
-      <h3>CSS Bayan</h3>
-      <details class="accordion">
+      <h3 class="page-heading">CSS Bayan</h3>
+      <details open class="accordion">
         <summary class="accordion-header">
-          You can't just copy & paste CSS
+          <span class="accordion-header-content1"
+            >You can't just copy & paste CSS</span
+          >
         </summary>
         <div class="accordion-content-wrapper">
           <p class="accordion-content">
@@ -33,7 +35,9 @@ feat: add basic page layout (Mon, Sep 13, 2021 10:25:24 PM) -->
         </div>
       </details>
       <details class="accordion">
-        <summary class="accordion-header">Keep calm and carry on</summary>
+        <summary class="accordion-header">
+          <span class="accordion-header-content2">Keep calm and carry on</span>
+        </summary>
         <div class="accordion-content-wrapper">
           <p class="accordion-content">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
@@ -41,6 +45,11 @@ feat: add basic page layout (Mon, Sep 13, 2021 10:25:24 PM) -->
             quaerat repellat quas quibusdam similique nesciunt, expedita odio,
             impedit iure ratione delectus neque!
           </p>
+          <img
+            src="./assets/1youCannotCopyCSS.png"
+            alt="youCannotCopyCSS"
+            class="accordion-content-img"
+          />
         </div>
       </details>
       <details class="accordion">
@@ -52,6 +61,11 @@ feat: add basic page layout (Mon, Sep 13, 2021 10:25:24 PM) -->
             quaerat repellat quas quibusdam similique nesciunt, expedita odio,
             impedit iure ratione delectus neque!
           </p>
+          <img
+            src="./assets/1youCannotCopyCSS.png"
+            alt="youCannotCopyCSS"
+            class="accordion-content-img"
+          />
         </div>
       </details>
     </div>
