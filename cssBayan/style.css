@@ -13,6 +13,7 @@ body {
 }
 .accordion {
   margin-bottom: 0.2rem;
+  color: blue;
 }
 .accordion-header {
   display: flex;
@@ -61,8 +62,16 @@ details {
   padding: 0.2rem;
 }
 
+.accordion-content-img-wrapper {
+  transform: scale(0);
+}
+
 details[open] > summary {
   margin-bottom: 1rem;
+}
+
+details[open] .accordion-content-img-wrapper {
+  transform: scale(1);
 }
 
 summary::after {
@@ -76,4 +85,20 @@ summary::after {
 
 details[open] summary::after {
   transform: rotate(90deg);
+}
+
+.accordion:hover {
+  color: black;
+  height: 30rem;
+}
+
+.accordion:hover .accordion-content-img-wrapper {
+  transform: scale(1);
+  visibility: visible;
+  height: 100%;
+  width: 50%;
+  transition: all 0.5s;
+}
+.accordion:focus .accordion-content-img-wrapper {
+  transform: scale(1);
 }
