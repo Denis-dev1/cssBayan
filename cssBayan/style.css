@@ -57,7 +57,7 @@ details[open] > summary > img {
 }
 
 details {
-  border: 2px solid gray;
+  border: 0.1rem solid gray;
   border-radius: 0.2rem;
   padding: 0.2rem;
 }
