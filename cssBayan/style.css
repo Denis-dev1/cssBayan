@@ -26,7 +26,7 @@ body {
   font-size: 1.2rem;
 }
 .accordion-content-wrapper {
-  padding: 5px;
+  padding: 1rem;
 }
 
 .accordion-content {
@@ -101,4 +101,99 @@ details[open] summary::after {
 }
 .accordion:focus .accordion-content-img-wrapper {
   transform: scale(1);
+}
+
+@media (max-width: 1919px) {
+  .container {
+    max-width: 60%;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .accordion-content {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1019px) {
+  .container {
+    max-width: 90%;
+    margin: 1rem 2rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  .accordion-content {
+    font-size: 0.9rem;
+  }
+  .accordion-content-img-wrapper {
+    scale: 0.8;
+  }
+  .accordion-content-img {
+    margin-left: 10%;
+    width: 70%;
+  }
+}
+
+@media (max-width: 819px) {
+  .container {
+    max-width: 90%;
+    margin: 1rem 2rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  .accordion-content {
+    font-size: 0.9rem;
+  }
+  .accordion-content-img-wrapper {
+    scale: 0.8;
+  }
+  .accordion-content-img {
+    margin-left: 10%;
+    width: 70%;
+  }
+}
+
+@media (max-width: 319px) {
+  .container {
+    max-width: 100%;
+    margin: 1rem 1rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .accordion-content {
+    font-size: 1.1rem;
+  }
+
+  .accordion-content-img-wrapper {
+    scale: 0.5;
+  }
+  .accordion-content-img {
+    margin-left: 10%;
+  }
+}
+
+@media (hover: hover) {
+  .accordion:hover {
+    margin-bottom: 0.2rem;
+    color: blue;
+  }
+
+  .accordion:hover .accordion-content-img-wrapper {
+    transform: scale(1);
+    visibility: visible;
+    height: 100%;
+    width: 50%;
+    transition: all 0.5s;
+  }
 }
