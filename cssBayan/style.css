@@ -1,0 +1,200 @@
+.container {
+  margin: 1rem 10rem;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.page-heading {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.accordion {
+  margin-bottom: 0.2rem;
+  color: blue;
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: gray;
+  padding: 1rem 2rem;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.accordion-content-wrapper {
+  padding: 1rem;
+}
+
+.accordion-content {
+  padding: 1rem;
+  margin: auto;
+}
+
+.accordion-content-img {
+  margin-left: 40%;
+}
+
+/* try this one */
+/* ✖️➕ ▶️  🔽 */
+
+details > summary {
+  list-style-type: none;
+  transition: all 0.5s;
+}
+
+details[open] > summary {
+  list-style-type: none;
+  transition: all 0.5s;
+}
+
+details[open] > summary > img {
+  scale: 0.8;
+  transition: all 0.5s;
+}
+
+details {
+  border: 0.1rem solid gray;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+}
+
+.accordion-content-img-wrapper {
+  transform: scale(0);
+}
+
+details[open] > summary {
+  margin-bottom: 1rem;
+}
+
+details[open] .accordion-content-img-wrapper {
+  transform: scale(1);
+}
+
+summary::after {
+  margin-left: 1ch;
+  display: inline-block;
+  transition: 0.2s;
+
+  content: "\26CC"; /* Very Bold Greek Cross */
+  transform: rotate(45deg);
+}
+
+details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+.accordion:hover {
+  color: black;
+  height: 30rem;
+}
+
+.accordion:hover .accordion-content-img-wrapper {
+  transform: scale(1);
+  visibility: visible;
+  height: 100%;
+  scale: 0.8;
+  margin-top: 1rem;
+  margin-left: auto;
+  transition: all 0.5s;
+}
+/* .accordion:focus .accordion-content-img-wrapper {
+  transform: scale(1);
+} */
+
+@media (max-width: 1919px) {
+  .container {
+    max-width: 60%;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .accordion-content {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1019px) {
+  .container {
+    max-width: 90%;
+    margin: 1rem 2rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  .accordion-content {
+    font-size: 0.9rem;
+  }
+  .accordion-content-img-wrapper {
+    scale: 0.8;
+    margin-top: 1rem;
+  }
+  .accordion-content-img {
+    margin-left: 20%;
+
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 819px) {
+  .container {
+    max-width: 90%;
+    margin: 1rem 2rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  .accordion-content {
+    font-size: 0.9rem;
+  }
+  .accordion-content-img-wrapper {
+    scale: 0.7;
+  }
+  .accordion-content-img {
+    margin-left: 10%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .accordion-content-img {
+    scale: 0.4;
+  }
+}
+
+@media (max-width: 319px) {
+  .container {
+    max-width: 100%;
+    margin: 1rem 1rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .accordion-content {
+    font-size: 1.1rem;
+  }
+
+  .accordion-content-img-wrapper {
+    scale: 0.5;
+  }
+  .accordion-content-img {
+    margin-left: 10%;
+  }
+}
+
+@media (hover: hover) {
+  .accordion:hover {
+    margin-bottom: 0.2rem;
+    color: blue;
+  }
+}
