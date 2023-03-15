@@ -96,12 +96,14 @@ details[open] summary::after {
   transform: scale(1);
   visibility: visible;
   height: 100%;
-  width: 50%;
+  scale: 0.8;
+  margin-top: 1rem;
+  margin-left: auto;
   transition: all 0.5s;
 }
-.accordion:focus .accordion-content-img-wrapper {
+/* .accordion:focus .accordion-content-img-wrapper {
   transform: scale(1);
-}
+} */
 
 @media (max-width: 1919px) {
   .container {
@@ -132,10 +134,12 @@ details[open] summary::after {
   }
   .accordion-content-img-wrapper {
     scale: 0.8;
+    margin-top: 1rem;
   }
   .accordion-content-img {
-    margin-left: 10%;
-    width: 70%;
+    margin-left: 20%;
+
+    margin-bottom: 1rem;
   }
 }
 
@@ -153,11 +157,16 @@ details[open] summary::after {
     font-size: 0.9rem;
   }
   .accordion-content-img-wrapper {
-    scale: 0.8;
+    scale: 0.7;
   }
   .accordion-content-img {
     margin-left: 10%;
-    width: 70%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .accordion-content-img {
+    scale: 0.4;
   }
 }
 
@@ -187,13 +196,5 @@ details[open] summary::after {
   .accordion:hover {
     margin-bottom: 0.2rem;
     color: blue;
-  }
-
-  .accordion:hover .accordion-content-img-wrapper {
-    transform: scale(1);
-    visibility: visible;
-    height: 100%;
-    width: 50%;
-    transition: all 0.5s;
   }
 }
